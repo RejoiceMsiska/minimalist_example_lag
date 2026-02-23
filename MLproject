@@ -5,11 +5,11 @@ entry_points:
     parameters:
       train_data: path
       model: str
-    command: "python train.py {train_data} {model}"
+    command: "python3 train.py {train_data} {model}"
   predict:
     parameters:
       historic_data: path
       future_data: path
       model: str
       out_file: path
-    command: "python predict.py {model} {historic_data} {future_data} {out_file}"
+    command: "python3 predict.py {model} {historic_data} {future_data} {out_file}"
